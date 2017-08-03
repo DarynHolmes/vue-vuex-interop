@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <input type="text" @keyup.enter="print()" v-model="desc">
+    <input type="text" @keyup.enter="createTodo()" v-model="desc">
     <!-- <button>Add</button> -->
   </div> 
 </template>
@@ -18,10 +18,33 @@ export default {
   methods: Object.assign({},
     mapActions(['addTodo']),
     {
-      print() {
-        this.addTodo({ description: this.desc });
+      createTodo() {
+        this.addTodo({ description: this.desc, done: false });
         this.desc = '';
       },
     }),
 };
 </script>
+
+<style scoped>
+input[type=text],
+input[type=password] {
+    box-sizing : border-box;
+}
+
+div {
+   /* background-color: gray;  */
+  /* width: 100%; */
+  
+  /* height: 60px; */
+
+}
+input {
+  width: 100%; 
+
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+</style>
+

@@ -1,12 +1,17 @@
 /* eslint-disable */
 
 import _ from 'lodash';
-import { ADD_TODO } from './mutation_types';
+import { ADD_TODO, TOGGLE_TODO } from './mutation_types';
 
 export default {
   [ADD_TODO](state, todo) {
     state.past.push(_.cloneDeep(state.present));
     state.present.todos.push(todo);
+    state.future = [];
+  },
+  [TOGGLE_TODO](state, index) {
+    state.past.push(_.cloneDeep(state.present));
+    state.present.todos[index].done = !state.present.todos[index].done;
     state.future = [];
   },
   ['UNDO'](state) {
