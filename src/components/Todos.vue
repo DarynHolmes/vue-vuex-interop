@@ -1,6 +1,9 @@
 <template>
   <div>
-      <div v-for="(todo, index) in todos" :key="index" class="todo"  :class="{ done: todo.done }" @click="toggleTodo(index)" >
+      <div v-for="(todo, index) in todos" 
+           :key="index" class="todo"  
+           :class="{ done: todo.done }" 
+           @click="toggleTodo(index)" >
             {{ todo.description }}
       </div>
   </div>
@@ -25,6 +28,7 @@ export default {
   border: 1px solid #4eba59;
   border-top: 0;
   padding: 15px;
+  margin-left: 10px;
 }
 
 .todo:first-child {

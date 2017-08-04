@@ -2,7 +2,8 @@
 <template>
   <div>
     <input type="text" @keyup.enter="createTodo()" v-model="desc">
-    <!-- <button>Add</button> -->
+    <button @click="redo">Redo</button> 
+    <button @click="undo">Undo</button> 
   </div> 
 </template>
 
@@ -16,7 +17,7 @@ export default {
     };
   },
   methods: Object.assign({},
-    mapActions(['addTodo']),
+    mapActions(['addTodo', 'undo', 'redo']),
     {
       createTodo() {
         this.addTodo({ description: this.desc, done: false });
@@ -31,17 +32,20 @@ input[type=text],
 input[type=password] {
     box-sizing : border-box;
 }
+button {
+  position: relative;
+  height: 33px;
+  top: -1px;
+  float: right;
+  /* margin-bottom: 10px; */
+}
 
 div {
-   /* background-color: gray;  */
-  /* width: 100%; */
-  
-  /* height: 60px; */
-
+  margin-left: 10px;
 }
 input {
-  width: 100%; 
-
+   width: 70%;  
+  
   margin-bottom: 20px;
   font-size: 16px;
   padding: 5px 10px;

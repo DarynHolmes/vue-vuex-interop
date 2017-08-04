@@ -7,4 +7,10 @@ export default {
   toggleTodo({ commit }, index) {
     commit(TOGGLE_TODO, index);
   },
+  undo({ commit }) {
+    commit('UNDO');
+  },
+  redo({ commit }) {
+    commit('REDO');
+  },
 };

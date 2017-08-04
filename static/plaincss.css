@@ -1,0 +1,41 @@
+
+.mutation {
+    background-color: #97db93;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border: 1px solid #246020;
+    
+}
+
+.state-count {
+    background-color: #41ac3a;
+    margin: 50px 10px 20px 10px;
+    padding: 10px;
+    border: 1px solid #246020;
+}
+
+.snapshot-title {
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    background-color: #d4f0d3;
+    border: 1px solid #246020;
+}
+
+.snapshot {
+    background-color: gray;
+    border: 1px solid black;
+    min-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+}
+
+.customTodo {
+    background-color: lightsalmon;
+    border: 1px solid red;
+    margin: 10px;
+    padding: 10px;
+    min-width: 20%;
+    max-width: 20%;
+}
