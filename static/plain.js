@@ -1,9 +1,3 @@
-// console.log('allo', store);
-
-
-// function add() {
-//     store.commit('ADD_TODO', { description: 'from plain old plain-js' })
-// }
 
 let stateCount = 0;
 store.subscribe((mutation, state) => {
