@@ -5,13 +5,14 @@
 //     store.commit('ADD_TODO', { description: 'from plain old plain-js' })
 // }
 
+let stateCount = 0;
 store.subscribe((mutation, state) => {
 
     const mainDiv = document.getElementById("plainjs");
     const newDiv = document.createElement("div");
 
     const pastDiv = document.createElement("div");
-    pastDiv.append(document.createTextNode('State: ' + (state.past.length)));
+    pastDiv.append(document.createTextNode('State: ' + (++stateCount)));
     pastDiv.className = 'state-count';
     newDiv.append(pastDiv);
     

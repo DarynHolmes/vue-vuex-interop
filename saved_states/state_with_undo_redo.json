@@ -1,0 +1,64 @@
+{
+  "past": [
+    {
+      "todos": [
+        
+      ]
+    },
+    {
+      "todos": [
+        {
+          "description": "Pay bills",
+          "done": false
+        }
+      ]
+    },
+    {
+      "todos": [
+        {
+          "description": "Pay bills",
+          "done": false
+        },
+        {
+          "description": "Go for a run",
+          "done": false
+        }
+      ]
+    },
+    {
+      "todos": [
+        {
+          "description": "Pay bills",
+          "done": false
+        },
+        {
+          "description": "Go for a run",
+          "done": false
+        },
+        {
+          "description": "Watch Game of Thrones",
+          "done": false
+        }
+      ]
+    }
+  ],
+  "present": {
+    "todos": [
+      {
+        "description": "Pay bills",
+        "done": false
+      },
+      {
+        "description": "Go for a run",
+        "done": false
+      },
+      {
+        "description": "Watch Game of Thrones",
+        "done": true
+      }
+    ]
+  },
+  "future": [
+    
+  ]
+}
