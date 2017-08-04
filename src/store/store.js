@@ -11,9 +11,7 @@ import mutations from './mutations';
 Vue.use(Vuex);
 
 const state = {
-  past: [],
-  present: { todos: [] },
-  future: [],
+  todos: [],
 };
 
 export default new Vuex.Store({
